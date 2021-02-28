@@ -12,3 +12,19 @@ outputs.
 - To tackle the ineffectiveness of conventional approach for constructing negative and positive examples for contrastive learning, we propose a principled method to automatically generate negative and positive pairs, that are more difficult and allows to learn more meaningful representations.
 - We show that our proposed method, CLAPS, significantly improves the performance of seq2seq
 model on three different tasks: machine translation, text summarization, and question generation.
+
+
+
+
+# Reference
+To cite the code/data/paper, please use this BibTex
+```bibtex
+@inproceedings{
+lee2021contrastive,
+title={Contrastive  Learning  with Adversarial Perturbations for Conditional Text Generation},
+author={Seanie Lee and Dong Bok Lee and Sung Ju Hwang},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=Wga_hrCa3P3}
+}
+```
