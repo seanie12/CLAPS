@@ -1,4 +1,5 @@
 # Contrastive Learning with Adversarial Perturbations for Conditional Text Generation
+This is the Pytorch implementation for the paper Contrastive Learning with Adversarial Perturbations for Conditional Text Generation (ICLR 2021): [[Paper]](https://openreview.net/forum?id=Wga_hrCa3P3)
 
 ## Abstract
 <img align="middle" width="800" src="https://github.com/seanie12/CLAPS/blob/main/images/method_fig.png">
