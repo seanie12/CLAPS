@@ -10,11 +10,51 @@ __Contribution of this work__
 negative pairs in the latent embedding space, to expose the model to various valid or incorrect
 outputs.
 - To tackle the ineffectiveness of conventional approach for constructing negative and positive examples for contrastive learning, we propose a principled method to automatically generate negative and positive pairs, that are more difficult and allows to learn more meaningful representations.
-- We show that our proposed method, CLAPS, significantly improves the performance of seq2seq
-model on three different tasks: machine translation, text summarization, and question generation.
+- We show that our proposed method, CLAPS, significantly improves the performance of seq2seq model on three different tasks: machine translation, text summarization, and question generation.
 
 
+# Dependecies
+* python >= 3.6
+* pytorch == 1.4
+* transformers == 3.0.2
+* tqdm
+* numpy
+* [sacrebleu](https://github.com/mjpost/sacrebleu)
+* [file2rouge](https://github.com/pltrdy/files2rouge)
 
+# Download Data
+__Summarization__
+```
+cd src/summarization
+mkdir data
+wget 
+http://bollin.inf.ed.ac.uk/public/direct/XSUM-EMNLP18-Summary-Data-Original.tar.gz
+python preprocess.py
+```
+__NMT__
+```
+cd src/nmt
+```
+Download [data.tar.gz](https://drive.google.com/file/d/1tfYJ0iFaWzpBLTF_dFvG1KAqACb6f35s/view?usp=sharing) and unzip it.
+__QG__
+```
+cd src/qg
+```
+Download [data.tar.gz](https://drive.google.com/file/d/1TpohA_frUOM-G4W2kUDjd0mztRPtpemp/view?usp=sharing) and unzip it.
+Download [pickle.tar.gz](https://drive.google.com/file/d/1N-Byr04UgQ_H3YjoMe7moOPzIoPhraCl/view?usp=sharing) and unzip it
+
+
+# Train model
+```
+cd src/"task"(e.g. qg, nmt, or summarization)
+python main.py --model_dir "directory for checkpoint" --devices "gpu devices" (gpu number delimited by _  e.g. 0_1_2_3_4_5_6_7) --batch_size "batch size" 
+```
+
+# Evaluate the model
+```
+cd src/"task"
+python inference.py --ckpt_file "check point file" --batch_size "batch size" --beam_size "beam size" --res_dir "directory for evaluation result"
+```
 
 # Reference
 To cite the code/data/paper, please use this BibTex
@@ -25,6 +65,5 @@ title={Contrastive  Learning  with Adversarial Perturbations for Conditional Tex
 author={Seanie Lee and Dong Bok Lee and Sung Ju Hwang},
 booktitle={International Conference on Learning Representations},
 year={2021},
-url={https://openreview.net/forum?id=Wga_hrCa3P3}
 }
 ```
