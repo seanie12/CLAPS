@@ -30,6 +30,9 @@ cd src/summarization
 mkdir data
 wget 
 http://bollin.inf.ed.ac.uk/public/direct/XSUM-EMNLP18-Summary-Data-Original.tar.gz
+```
+Download train/dev/test split from [here](https://drive.google.com/file/d/1gWpwacqdcFYpyTOXmdJyTqhzmzpIDhAo/view) and place it under data directory.
+```
 python preprocess.py
 ```
 __NMT__
