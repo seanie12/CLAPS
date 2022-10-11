@@ -44,13 +44,27 @@ __NMT__
 ```
 cd src/nmt
 ```
-Download [data.tar.gz](https://drive.google.com/file/d/1tfYJ0iFaWzpBLTF_dFvG1KAqACb6f35s/view?usp=sharing) and unzip it.
+
+<!---
+old Download [data.tar.gz](https://drive.google.com/file/d/1tfYJ0iFaWzpBLTF_dFvG1KAqACb6f35s/view?usp=sharing) and unzip it.
+-->
+
+Download [data.gz](https://drive.google.com/file/d/19aO-DqMMrYA6yMaH83n9Kz49UMHqGCl2/view?usp=sharing) and unzip it.
+
+
 __QG__
 ```
 cd src/qg
 ```
+
+<!---
 Download [data.tar.gz](https://drive.google.com/file/d/1TpohA_frUOM-G4W2kUDjd0mztRPtpemp/view?usp=sharing) and unzip it.
 Download [pickle.tar.gz](https://drive.google.com/file/d/1N-Byr04UgQ_H3YjoMe7moOPzIoPhraCl/view?usp=sharing) and unzip it
+-->
+
+Download [data.gz](https://drive.google.com/file/d/1EtVJWRT84aGsyD4L3kOsOZ7cwjikggOk/view?usp=sharing) and unzip it.
+Download [pickle.tar.gz](https://drive.google.com/file/d/1WHfWdzS4d6wjJ-ECKcP_5e5j3q_EsRmb/view?usp=sharing) and unzip it
+
 
 
 # Train model
