@@ -31,7 +31,12 @@ mkdir data
 wget 
 http://bollin.inf.ed.ac.uk/public/direct/XSUM-EMNLP18-Summary-Data-Original.tar.gz
 ```
-Download train/dev/test split from [here](https://drive.google.com/file/d/1gWpwacqdcFYpyTOXmdJyTqhzmzpIDhAo/view) and place it under data directory.
+Download train/dev/test split from [here](https://drive.google.com/file/d/1_K5LQYOwqfVgs9oe_A8OjAHKkXauz29Y/view?usp=sharing) and place it under data directory. 
+
+<!---
+old (https://drive.google.com/file/d/1gWpwacqdcFYpyTOXmdJyTqhzmzpIDhAo/view) 
+-->
+
 ```
 python preprocess.py
 ```
